@@ -1,7 +1,6 @@
 let orderStatus = null
-//const synth = window.speechSynthesis
-
-let voices = synth.getVoices()
+var synth = window.speechSynthesis;
+let voices = synth.getVoices();
 
 //let msg = document.querySelector("#orderMessage").innerHTML
 setInterval(() => {
@@ -30,9 +29,11 @@ setInterval(() => {
                         if(newOrder._id === order._id){
                            if(newOrder.complete === true){
               
-                                document.querySelector("#orderMessage").innerHTML= `${newOrder.name}, your ${newOrder.order} is ready` 
-                                
-                           } 
+                                document.querySelector("#orderMessage").innerHTML= `${newOrder.name}, your ${newOrder.order} is ready`
+                                var utterThis = new SpeechSynthesisUtterance(`${newOrder.name}, your ${newOrder.order} is ready`)  
+                                utterThis.voice = voices[3] ///select google US  voice
+                                synth.speak(utterThis)  
+                           }
                         }
                     }
                     
