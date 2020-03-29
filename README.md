@@ -31,7 +31,7 @@ A simple full stack POS register app for a fictional coffee shop that able to ta
 
 This project didn't really have much front end logic but more backend making sure the routes are connected and that the database is being updated correctly. 
 
-##**BUGS: 
+##BUGS: 
 
 -The voice runs through the whole list of completed order every three seconds which is not ideal. the voice just need to say the last compeleted order. Possible solution is to create a seperate collection in database solely for completed orders and retrive the last order from that collection when the bartista press the complete button.
 
