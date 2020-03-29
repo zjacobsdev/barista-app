@@ -33,7 +33,7 @@ This project didn't really have much front end logic but more backend making sur
 
 ## **BUGS: 
 
--The voice runs through the whole list of completed order every three seconds which is not ideal. the voice just need to say the last compeleted order. Possible solution is to create a seperate collection in database solely for completed orders and retrive the last order from that collection when the bartista press the complete button.
+The voice runs through the whole list of completed order every three seconds which is not ideal. The voice just need to say the last compeleted order. A possible solution is to create a seperate collection in the database solely for completed orders and retrieve the last order from that collection when the bartista presses the complete button.
 
 ## Credit
 
