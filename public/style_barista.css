@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+  
+}
+html{
+
+  font-size: 10px;
+  font-family: 'Baloo 2', cursive;
+
+}
+
+body{
+  word-wrap:break-word;
+  background-color:	#630000 ;
+  color: aliceblue;
+}
+h1{
+  clear: both;
+  font-family: 'Baloo 2', cursive;
+}
+h3{
+  font-size: 3rem;
+  text-align: center;
+  color: #ce944e;
+  font-family: 'Baloo 2', cursive;
+}
+img{
+  height: 120px;
+  width: 120px;
+  float: left;
+}
+li{
+  list-style-type: none;
+  margin-bottom: 30px;
+  background-color:#ce944e;;
+  padding: 15px 1% 15px 1%;
+  border-radius: 5px;
+  border: 2px outset rgb(156, 155, 155);
+}
+.page-header {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+.btn{
+float: right;
+margin-top: 30px;
+}
+.usr{
+  font-size: 3rem;
+  margin-left: 5%;
+}
+.order-sec{
+  height: 800px;
+  background-color: rgba(82, 76, 76, 0.74);
+  
+}
+ .completed,.completeButton, .barista, .orderName,.orderItem{
+  display: block;
+  text-align: center;
+  font-family: 'Baloo 2', cursive;
+}
+.completed{
+  color: green;
+  font-size: 1.2rem ;
+}
+.barista{
+  color: yellow;
+
+}
+.orderName{
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: black;
+  border-radius: 10px;
+ 
+}
+.orderItem{
+ color: black;
+ font-weight: 800; 
+
+}
+.btn, .completeButton{
+    font-size: 20px;
+    margin-right: 11%;
+    background-color: #131313;
+    color: 	#ce944e;
+    border: 2px solid rgb(107, 91, 91);
+    border-radius: 10px; 
+    margin:auto;
+    font-family: 'Baloo 2', cursive;
+    
+  
+}
+

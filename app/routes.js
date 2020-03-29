@@ -40,9 +40,10 @@ module.exports = function(app, passport, db) {
       db.collection('orders').save({name: req.body.name, order: req.body.order, complete: false, barista: null}, (err, result) => {
         if (err) return console.log(err)
         console.log('saved to database')
-        res.redirect('/vieworders')
+        res.redirect('/')
       })
     })
+    
 // Update Order Complete By Barista ==========================================
 //      1st Put request
     app.put('/orders', (req, res) => {
@@ -62,27 +63,7 @@ module.exports = function(app, passport, db) {
       })
     })
 
-    // app.put('/thumbDown', (req, res) => {
-    //   db.collection('messages')
-    //   .findOneAndUpdate({name: req.body.name, msg: req.body.msg}, {
-    //     $set: {
-    //       thumbUp:req.body.thumbUp - 1
-    //     }
-    //   }, {
-    //     sort: {_id: -1},
-    //     upsert: true
-    //   }, (err, result) => {
-    //     if (err) return res.send(err)
-    //     res.send(result)
-    //   })
-    // })
 
-    // app.delete('/messages', (req, res) => {
-    //   db.collection('messages').findOneAndDelete({name: req.body.name, msg: req.body.msg}, (err, result) => {
-    //     if (err) return res.send(500, err)
-    //     res.send('Message deleted!')
-    //   })
-    // })
 
 // =============================================================================
 // AUTHENTICATE (FIRST LOGIN) ==================================================

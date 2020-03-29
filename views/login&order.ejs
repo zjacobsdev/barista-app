@@ -4,13 +4,21 @@
     <title>Barista App</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+   <h1><img src="img/coffee-log.png" alt=""></h1>
+   <section class = "login-container">
+    <span>Sign In</span>
+    <a href="/login" class="btn btn-default"></span>Login</a>
+    <a href="/signup" class="btn btn-default"></span>Signup</a>
+  </section>
+<section class="container">
 
-    <div class="jumbotron text-center">
-        <h1>Make your Order</h1>
+    <section class="jumbotron text-center">
+      
+        <h2>Cashier #000000</h2>
         
        
         <h2 id="orderMessage"></h2>
@@ -20,23 +28,21 @@
           <input type="text" placeholder="message" name="msg">
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </section>
       <% } */%>
 
-        <form action="/vieworders" method="POST" id="order">            
-            <input name="name" id="customerName" type="text" placeholder="Your Name">
-            <input name="order" id="customerOrder" type="text" placeholder="Order Your Coffee Here">
-            <button id="placeOrder">Place Order</button>
+        <form action="/vieworders" method="POST" id="order">         
+            <input name="name" id="customerName" type="text" placeholder="Name">
+            <input name="order" id="customerOrder" type="text" placeholder="Order Items">
+            <button id="placeOrder" class="btn">Place Order</button>
         </form>    
-        <img src="img/coffee.jpeg" alt="Barista App Photo">
+        <!-- <img src="img/coffee.jpeg" alt="Barista App Photo"> -->
 
-        <p>Barista Login or Signup:</p>
+       
         
-        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
-        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+        
 
-    </div>
     <script src="main2.js"></script>
-</div>
+  </section>
 </body>
 </html>

@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+
+}
+html{
+
+  font-size: 10px;
+
+}
+body{
+  word-wrap:break-word;
+  background-color:	#630000 ;
+  color: white;
+  font-family: 'Baloo 2', cursive;
+}
+h1{
+  color: 	#ce944e;
+  font-family: 'Baloo 2', cursive;
+
+}
+img{
+  height: 75px;
+  width: 75px;
+}
+
+
+.btn {
+  font-size: 20px;
+  margin-right: 11%;
+  background-color: #131313;
+  color: 	#ce944e;
+  border: 2px solid rgb(107, 91, 91);
+  border-radius: 10px;
+ 
+}
+
+
+@media screen and (max-width:620px){
+  input{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    
+  }
+  #placeOrder{
+    display: block;
+    margin: auto;
+  }
+  .login-container{
+    display: none;
+    
+  }
+}
+@media screen and (min-width:620px) and (max-width:900px){
+  span{
+    display: none;
+  }
+  
+}
+
+
+
+
